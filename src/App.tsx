@@ -1,11 +1,13 @@
-import { useInquiryCategories } from './hooks/useInquiryCategories'
-import { useNavigation } from './hooks/useNavigation'
-import { useStats } from './hooks/useStats'
+import { useQuery } from '@tanstack/react-query'
+import { getInquiryCategories, getNavigation, getStats } from './api'
 
 function App() {
-  const nav = useNavigation()
-  const categories = useInquiryCategories()
-  const stats = useStats()
+  const nav = useQuery({ queryKey: ['navigation'], queryFn: getNavigation })
+  const categories = useQuery({
+    queryKey: ['inquiry-categories'],
+    queryFn: getInquiryCategories,
+  })
+  const stats = useQuery({ queryKey: ['stats'], queryFn: getStats })
 
   if (nav.isLoading || categories.isLoading || stats.isLoading) {
     return <p className="p-8">Loading...</p>

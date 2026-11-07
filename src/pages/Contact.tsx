@@ -1,7 +1,7 @@
-
 import { useState } from 'react'
 import ContactIntro from '../components/contactintro'
 import InquiryGuidance from '../components/inquiryguidance'
+import CommunityUpdates from '../components/communityupdates'
 
 function Contact() {
   // Shared selected category state
@@ -24,7 +24,12 @@ function Contact() {
               selectedCategoryId={selectedCategoryId}
               onSelectCategory={setSelectedCategoryId}
             />
+
+            <CommunityUpdates />
           </div>
+
+          {/* RIGHT COLUMN */}
+          {/* Contact form will go here next */}
 
         </div>
       </div>

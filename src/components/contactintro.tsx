@@ -27,7 +27,7 @@ function contactintro() {
       {/* Main heading */}
       <h1
         id="contact-title"
-        className="mt-5 text-[clamp(32px,4.5vw,48px)] leading-[1.15] font-bold tracking-[1px] text-[#242424]"
+        className="mt-5 text-[clamp(32px,4.5vw,57px)] leading-[1.15] font-bold tracking-[1px] text-[#242424]"
       >
         Good things start with{' '}
         <span className="text-[#1967D2]">
@@ -36,7 +36,7 @@ function contactintro() {
       </h1>
 
       {/* Description */}
-      <p className="mt-5 max-w-[510px] text-[14px] leading-[1.6] text-[#5F6368]">
+      <p className="mt-5 max-w-[510px] text-[18px] leading-[1.6] text-[#5F6368]">
         A question, a collaboration, or an idea for the
         community? Tell us what’s on your mind.
       </p>

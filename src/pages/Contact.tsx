@@ -3,6 +3,7 @@ import ContactIntro from '../components/contactintro'
 import InquiryGuidance from '../components/inquiryguidance'
 import CommunityUpdates from '../components/communityupdates'
 import ContactForm from '../components/contactform'
+import BeforeYouContact from '../components/beforeyoucontact'
 
 function Contact() {
   // Shared selected category state
@@ -35,6 +36,10 @@ function Contact() {
             onSelectCategory={setSelectedCategoryId}
             />
         </div>
+
+        {/* Before you contact */}
+        <BeforeYouContact />
+
       </div>
     </div>
   )

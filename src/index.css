@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("./assets/fonts.ttf") format("truetype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "Google Sans", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Google Sans", Arial, sans-serif;
+  color: #242424;
+}

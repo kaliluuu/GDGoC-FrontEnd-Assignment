@@ -1,28 +1,34 @@
-import { useQuery } from '@tanstack/react-query'
-import { getInquiryCategories, getNavigation, getStats } from './api'
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+
+import Landing from './pages/landing'
+import Contact from './pages/contact'
+import Header from './components/header'
+// We'll import Footer later
+
+const queryClient = new QueryClient()
 
 function App() {
-  const nav = useQuery({ queryKey: ['navigation'], queryFn: getNavigation })
-  const categories = useQuery({
-    queryKey: ['inquiry-categories'],
-    queryFn: getInquiryCategories,
-  })
-  const stats = useQuery({ queryKey: ['stats'], queryFn: getStats })
-
-  if (nav.isLoading || categories.isLoading || stats.isLoading) {
-    return <p className="p-8">Loading...</p>
-  }
-
-  if (nav.error || categories.error || stats.error) {
-    return <p className="p-8 text-red-600">Something went wrong</p>
-  }
-
   return (
-    <div className="p-8 space-y-4">
-      <p>Nav: {nav.data?.map((n) => n.label).join(', ')}</p>
-      <p>Categories: {categories.data?.map((c) => c.label).join(', ')}</p>
-      <p>Instagram: {stats.data?.social.instagram}</p>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <div className="flex min-h-screen flex-col bg-white">
+          {/* Shared Header */}
+          <Header />
+
+          {/* Page Content */}
+          <main className="flex-1">
+            <Routes>
+              <Route path="/" element={<Landing />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </main>
+
+          {/* Shared Footer will go here */}
+        </div>
+      </BrowserRouter>
+    </QueryClientProvider>
   )
 }
 

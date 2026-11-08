@@ -1,4 +1,4 @@
-# GDGoC UGM Frontend
+# GDGoC UGM Frontend Kalila
 
 GDGoC UGM — Frontend Website
 A responsive frontend website for Google Developer Groups on Campus (GDGoC) UGM, developed as a frontend technical assignment. The site introduces the community, presents ways to learn and participate, and helps visitors get in touch.
@@ -9,7 +9,7 @@ Replace the placeholders below with your actual public links before submitting.
 
 - Live website: https://gdgoc-front-end-assignment-napnxn5sj-kalila2.vercel.app
 - Source code: https://github.com/kaliluuu/GDGoC-FrontEnd-Assignment
-- Video presentation (3–5 minutes): Google Drive video
+- Video presentation:(https://drive.google.com/drive/folders/1geZn-XoAO-UMIJQfhMR5VH8zGh3vhtjD?usp=sharing)
 
 Tech stack
 Technology Purpose

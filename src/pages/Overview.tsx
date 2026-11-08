@@ -4,6 +4,7 @@ import LearningTrack from '../components/overview/learningtrack'
 import LearningOutcomes from '../components/overview/learningoutcomes'
 import ProgramFormat from '../components/overview/programformat'
 import LearningJourney from '../components/overview/learningjourney'
+import StartingPoint from '../components/overview/startingpoint'
 
 function Overview() {
   return (
@@ -23,12 +24,7 @@ function Overview() {
        </div>
       <ProgramFormat />
       <LearningJourney />
-
-        <section id="starting-point" className="scroll-mt-28 py-16">
-          <h2 className="text-3xl font-bold text-[#242424]">
-            Starting Point
-          </h2>
-        </section>
+      <StartingPoint />
     </div>
   )
 }

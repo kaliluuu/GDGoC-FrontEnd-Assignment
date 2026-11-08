@@ -5,6 +5,7 @@ import LearningOutcomes from '../components/overview/learningoutcomes'
 import ProgramFormat from '../components/overview/programformat'
 import LearningJourney from '../components/overview/learningjourney'
 import StartingPoint from '../components/overview/startingpoint'
+import CommunityInvitation from '../components/overview/communityinvitation'
 
 function Overview() {
   return (
@@ -25,6 +26,7 @@ function Overview() {
       <ProgramFormat />
       <LearningJourney />
       <StartingPoint />
+      <CommunityInvitation />
     </div>
   )
 }

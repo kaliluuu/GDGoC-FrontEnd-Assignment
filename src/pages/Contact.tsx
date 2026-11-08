@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import ContactIntro from '../components/contactintro'
-import InquiryGuidance from '../components/inquiryguidance'
-import CommunityUpdates from '../components/communityupdates'
-import ContactForm from '../components/contactform'
-import BeforeYouContact from '../components/beforeyoucontact'
+import ContactIntro from '../components/contact/contactintro'
+import InquiryGuidance from '../components/contact/inquiryguidance'
+import CommunityUpdates from '../components/contact/communityupdates'
+import ContactForm from '../components/contact/contactform'
+import BeforeYouContact from '../components/contact/beforeyoucontact'
 
 function Contact() {
   // Shared selected category state

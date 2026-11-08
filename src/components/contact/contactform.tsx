@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import type { FormEvent } from 'react'
 import { useQuery } from '@tanstack/react-query'
-import { getInquiryCategories } from '../api'
+import { getInquiryCategories } from '../../api'
 
 type ContactFormProps = {
   selectedCategoryId: string | null

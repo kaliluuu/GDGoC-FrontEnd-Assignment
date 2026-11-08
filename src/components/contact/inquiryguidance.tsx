@@ -1,6 +1,6 @@
 
 import { useQuery } from '@tanstack/react-query'
-import { getInquiryCategories } from '../api'
+import { getInquiryCategories } from '../../api'
 
 type InquiryGuidanceProps = {
   selectedCategoryId: string | null

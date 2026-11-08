@@ -36,7 +36,7 @@ function contactintro() {
       </h1>
 
       {/* Description */}
-      <p className="mt-5 max-w-[510px] text-[18px] leading-[1.6] text-[#5F6368]">
+      <p className="mt-5 max-w-[610px] text-[18px] leading-[1.6] text-[#5F6368]">
         A question, a collaboration, or an idea for the
         community? Tell us what’s on your mind.
       </p>

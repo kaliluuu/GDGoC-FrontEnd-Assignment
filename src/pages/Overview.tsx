@@ -1,6 +1,7 @@
 import OverviewIntro from '../components/overview/intro'
 import OverviewSectionNav from '../components/overview/sectionnav'
 import LearningTrack from '../components/overview/learningtrack'
+import LearningOutcomes from '../components/overview/learningoutcomes'
 
 function Overview() {
   return (
@@ -17,6 +18,7 @@ function Overview() {
        <div className="mx-auto max-w-[1280px] px-6 pb-16 sm:px-10 lg:px-16">
         <LearningTrack />
 
+      <LearningOutcomes />
         <section id="program-format" className="scroll-mt-28 py-16">
           <h2 className="text-3xl font-bold text-[#242424]">
             Program Format

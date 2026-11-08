@@ -17,3 +17,7 @@ body {
   font-family: "Google Sans", Arial, sans-serif;
   color: #242424;
 }
+
+html {
+  scroll-behavior: smooth;
+}

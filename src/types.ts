@@ -34,10 +34,18 @@ export interface Stats {
   tagline: string
 }
 
-
 export type Track = {
   id: string
   name: string
   description: string
   skills: string[]
 }
+
+export type LearningFormat = {
+  id: string
+  name: string
+  description: string
+  icon: string
+  cta: string
+}
+

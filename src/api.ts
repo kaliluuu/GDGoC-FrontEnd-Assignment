@@ -24,3 +24,5 @@ export const getInquiryCategories = () =>
 export const getStats = () => apiGet<Stats>('/stats')
 export const getTracks = () =>
   apiGet<Track[]>('/tracks')
+export const getFormats = () =>
+  apiGet<LearningFormat[]>('/formats')

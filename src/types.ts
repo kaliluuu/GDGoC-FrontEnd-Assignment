@@ -49,3 +49,9 @@ export type LearningFormat = {
   cta: string
 }
 
+export type JourneyStep = {
+  step: number
+  id: string
+  title: string
+  description: string
+}

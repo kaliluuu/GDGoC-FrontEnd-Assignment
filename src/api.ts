@@ -1,4 +1,4 @@
-import type { ApiResponse, InquiryCategory, NavItem, Stats, Track } from './types'
+import type { ApiResponse, InquiryCategory, NavItem, Stats, Track, LearningFormat, JourneyStep } from './types'
 
 const BASE_URL = 'https://gdgoc-ugm-api.vercel.app/api'
 
@@ -26,3 +26,5 @@ export const getTracks = () =>
   apiGet<Track[]>('/tracks')
 export const getFormats = () =>
   apiGet<LearningFormat[]>('/formats')
+export const getJourney = () =>
+  apiGet<JourneyStep[]>('/journey')

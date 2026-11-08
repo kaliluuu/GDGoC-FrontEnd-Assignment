@@ -3,6 +3,7 @@ import OverviewSectionNav from '../components/overview/sectionnav'
 import LearningTrack from '../components/overview/learningtrack'
 import LearningOutcomes from '../components/overview/learningoutcomes'
 import ProgramFormat from '../components/overview/programformat'
+import LearningJourney from '../components/overview/learningjourney'
 
 function Overview() {
   return (
@@ -21,11 +22,7 @@ function Overview() {
         <LearningOutcomes />
        </div>
       <ProgramFormat />
-      <section id="learning-journey" className="scroll-mt-28 py-16">
-          <h2 className="text-3xl font-bold text-[#242424]">
-            Learning Journey
-          </h2>
-        </section>
+      <LearningJourney />
 
         <section id="starting-point" className="scroll-mt-28 py-16">
           <h2 className="text-3xl font-bold text-[#242424]">

@@ -26,7 +26,7 @@ function OverviewIntro() {
           {/* Main heading */}
           <h1
             id="overview-intro-title"
-            className="mt-5 text-[36px] leading-[1.08] font-bold text-[#242424] sm:text-[44px] lg:text-[52px]"
+            className="mt-7 text-[36px] leading-[1.3] font-bold text-[#242424] sm:text-[44px] lg:text-[52px]"
           >
             Find your spark.
             <span className="block text-[#1967D2]">

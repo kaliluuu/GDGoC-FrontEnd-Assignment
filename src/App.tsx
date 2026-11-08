@@ -1,9 +1,10 @@
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
-import Landing from './pages/landing'
-import Contact from './pages/contact'
+import Landing from './pages/Landing'
+import Overview from './pages/Overview'
+import Contact from './pages/Contact'
+
 import Header from './components/header'
 import Footer from './components/footer'
 
@@ -21,6 +22,7 @@ function App() {
           <main className="flex-1">
             <Routes>
               <Route path="/" element={<Landing />} />
+              <Route path="/overview" element={<Overview />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>

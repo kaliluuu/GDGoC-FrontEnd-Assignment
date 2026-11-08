@@ -33,3 +33,11 @@ export interface Stats {
   }
   tagline: string
 }
+
+
+export type Track = {
+  id: string
+  name: string
+  description: string
+  skills: string[]
+}

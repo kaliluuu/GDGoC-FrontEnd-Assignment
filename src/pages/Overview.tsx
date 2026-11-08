@@ -1,5 +1,6 @@
 import OverviewIntro from '../components/overview/intro'
 import OverviewSectionNav from '../components/overview/sectionnav'
+import LearningTrack from '../components/overview/learningtrack'
 
 function Overview() {
   return (
@@ -13,12 +14,8 @@ function Overview() {
       <OverviewSectionNav />
 
       {/* 3. Placeholder */}
-      <div className="mx-auto max-w-[1280px] px-6 py-16 sm:px-10 lg:px-16">
-        <section id="learning-track" className="scroll-mt-28 py-16">
-          <h2 className="text-3xl font-bold text-[#242424]">
-            Learning Track
-          </h2>
-        </section>
+       <div className="mx-auto max-w-[1280px] px-6 pb-16 sm:px-10 lg:px-16">
+        <LearningTrack />
 
         <section id="program-format" className="scroll-mt-28 py-16">
           <h2 className="text-3xl font-bold text-[#242424]">
